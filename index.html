@@ -4,50 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>NY Times</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="assets/css/style.css">
     
 </head>
 <body>
-    <div class="jumbotron">
-       <h1 class="display-4"></h1>
-       <p class="lead"></p>
-       <hr class="my-4">
-       <p></p>
-       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-     </div>
+    <!-- header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1 class="display-3 text-center"><b>New York Times Search</b></h1>
+                    <p class="lead"></p>
+      
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- A heading -->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar rounded">                    
+                    <span class="navbar-brand mb-0 h1"><img src="assets/images/newspaperIcon.jpg" id="navbarIcon" alt="newspaper icon">Search Parameters</span>
+                </nav>
+            </div>            
+        </div>
+        <!-- main form body -->
+        <div class="row" id="formBody">
+            <div class="col-12 border" id="searchForm">
+                <form>
+                    <div class="form-group">
+                        <label for="searchInput">Search Term:</label>
+                        <input type="text" class="form-control" id="searchInput" placeholder="elections">
+                    </div>
+                    <div class="form-group">
+                        <label for="numberRecords">Number of Records to Retrieve:</label>
+                        <select class="form-control" id="numberRecords">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="startYear">Start Year (Optional):</label>
+                        <input type="number" class="form-control" id="startYear" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="endYear">End Year (Optional):</label>
+                        <input type="number" class="form-control" id="endYear" placeholder="">
+                    </div>           
+                    <!-- buttons -->
+                    <button class="btn btn-primary btn-lg" id="searchButton" type="button" role="button">Search</button>
+                    <button class="btn btn-danger btn-lg" id="clearButton" type="button" role="button">Clear Results</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        
+        <div class="row">
+            <div class="col-12">
+                <!-- A heading -->
+                    <nav class="navbar rounded">
+                        
+                        <span class="navbar-brand mb-0 h1"><img src="assets/images/newspaperIcon.jpg" id="resultsIcon" alt="newspaper icon">Top Articles</span>
+                    </nav>
+                </div>
+            </div>
+            <!-- display search results -->
+            <div class="row" id="resultsBody">
+                <div class="col-12 border" id="searchResults">
 
-     <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Search Term:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </form>
-
+    </div>    
+            
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+.navbar{
+    color: white;
+    background: black;
+}
+
+.jumbotron {
+    background-color: purple;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 5px;
+ }
+
+ body {
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+ }
+
+ #navbarIcon, #resultsIcon{
+     width: 40px;
+     height: 40px;
+     margin-right: 20px;
+ }
+ 
+ #formBody, #resultsBody{
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ #searchForm, #searchResults{
+     padding-top: 20px;
+     padding-bottom: 20px;
+     font-weight: bolder;
+ }
+
+ img{
+    border-radius: 50%;
+ }
